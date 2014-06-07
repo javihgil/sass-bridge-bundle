@@ -1,0 +1,30 @@
+{
+    "name":        "javihgil/sass-bridget-bundle",
+    "type":        "symfony-bundle",
+    "description": "This bundle allows sass rewrites in symfony projects",
+    "keywords":    ["symfony", "bundle", "sass"],
+    "license":     "MIT",
+
+    "authors": [
+        {
+            "name": "Javi H. Gil",
+            "homepage": "https://github.com/javihgil/sass-bridge-bundle"
+        }
+    ],
+
+    "require": {
+        "php": ">=5.3.2",
+        "symfony/symfony": "~2.4",
+        "symfony/assetic-bundle": "~2.4"
+    },
+
+    "minimum-stability": "stable",
+
+    "autoload": {
+        "psr-0": {
+            "Jhg\\SassBridgeBundle": ""
+        }
+    },
+
+    "target-dir": "Jhg/SassBridgeBundle"
+}
