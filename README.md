@@ -89,6 +89,6 @@ In development process we want to test any change quick, so we need to disable a
 
     parameters:
         # overrides assetic cache on development for disable scss caching
-        assetic.cache.class: Mundoreader\CoreDebugBundle\Assetic\Cache\FilesystemCache # Assetic\Cache\FilesystemCache
+	assetic.cache.class: Jhg\SassBridgeBundle\Assetic\Cache\FilesystemCache
 
 
