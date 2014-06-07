@@ -1,6 +1,14 @@
 # SassBridgeBundle
 
-# Configuración de filtro SassRewrite de Assetic
+## Configure Bundle
+
+**composer.json**
+
+    require: {
+        "javihgil/sass-bridge-bundle": "~1.0"
+    }
+
+## Assetic SassRewrite filter configuration
 
 **app/config/config.yml**
 
@@ -26,15 +34,15 @@ Hay que apuntar al XML del filtro en *resource* según el directorio de instalac
     }
 
 
-# Configure Sass
+## Configure Sass
 
-## Ubuntu installation
+### Ubuntu installation
 
     $ sudo apt-get install ruby
     $ sudo gem install sass
     $ sudo gem install compass
 
-## Symfony config
+### Symfony config
 
 **config/parameters.yml**
 
@@ -52,7 +60,7 @@ Hay que apuntar al XML del filtro en *resource* según el directorio de instalac
             compass:
                 bin: "%assetic_compass_bin%"
 
-# Bootstrap Sass
+## Bootstrap Sass
 
 **composer.json**
 
@@ -66,7 +74,7 @@ Hay que apuntar al XML del filtro en *resource* según el directorio de instalac
         resources_paths:
             bootstrap: "../vendor/twbs/bootstrap-sass/vendor/assets/stylesheets/bootstrap"
 
-## Usage
+### Usage
 
     @import '@boostrap/variables';
 
