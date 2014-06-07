@@ -78,3 +78,17 @@ Hay que apuntar al XML del filtro en *resource* según el directorio de instalac
 
     @import '@boostrap/variables';
 
+
+## Configure development cache
+
+Assetic only watch if a file was modified, but no if any of imports were modified.
+
+In development process we want to test any change quick, so we need to disable assetic caching.
+
+**app/config/config_dev.yml**
+
+    parameters:
+        # overrides assetic cache on development for disable scss caching
+        assetic.cache.class: Mundoreader\CoreDebugBundle\Assetic\Cache\FilesystemCache # Assetic\Cache\FilesystemCache
+
+
