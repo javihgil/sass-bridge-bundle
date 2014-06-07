@@ -1,5 +1,5 @@
 {
-    "name":        "javihgil/sass-bridget-bundle",
+    "name":        "javihgil/sass-bridge-bundle",
     "type":        "symfony-bundle",
     "description": "This bundle allows sass rewrites in symfony projects",
     "keywords":    ["symfony", "bundle", "sass"],
