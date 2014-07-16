@@ -44,7 +44,7 @@ class SassRewriteFilter implements FilterInterface
 
         $kernelRootDir = $this->getKernel()->getRootDir();
 
-        $content = $this->rewriteSassContent($asset->getContent(),pathinfo($filePath,PATHINFO_DIRNAME));
+        $content = $this->rewriteSassContent($asset->getContent(),$assetAbsolutePath);
         $asset->setContent($content);
     }
 
